@@ -10,4 +10,12 @@ public class Application {
 		this.localSocket = localSocket;
 		this.remoteSocket = remoteSocket;
 	}
+	
+	public Socket getLocalSocket {
+	return localSocket;	
+	}
+	
+	public Socket getRemoteSocket {
+	return remoteSocket;	
+	}
 }
