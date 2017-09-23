@@ -10,12 +10,16 @@ public class NetworkLayer extends Layer {
 		this.address = address;
 		this.mask = mask;
 	}
-	public int GetMask()
-	{
+	public int GetMask() {
 		return mask;
 	}
-	public int GetAddress()
-	{
+	public int GetAddress() {
 		return address;
+	}
+	public static PacketData encapsulate(PacketData packetData) {
+		return packetData != null ? new PacketData(packetData) : null;
+	}
+	public static PacketData decapsulate(PacketData packetData) {
+		return packetData != null ? new PacketData(packetData) : null;
 	}
 }
