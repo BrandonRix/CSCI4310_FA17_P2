@@ -7,15 +7,15 @@ public class Application {
 	private Socket remoteSocket;
 
 	public Application(Socket localSocket, Socket remoteSocket) {
-		this.localSocket = localSocket;
+		this.setLocalSocket(localSocket);
 		this.remoteSocket = remoteSocket;
 	}
 	
-	public Socket getLocalSocket {
-	return localSocket;	
+	public Socket getLocalSocket() {
+		return localSocket;
 	}
-	
-	public Socket getRemoteSocket {
-	return remoteSocket;	
+
+	public void setLocalSocket(Socket localSocket) {
+		this.localSocket = localSocket;
 	}
 }
