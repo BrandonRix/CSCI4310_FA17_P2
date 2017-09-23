@@ -1,5 +1,6 @@
 package Layers;
 
+import Common.PacketData;
 import Enums.LayerType;
 
 public class PhysicalLayer extends Layer {
