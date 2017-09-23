@@ -10,4 +10,12 @@ public class NetworkLayer extends Layer {
 		this.address = address;
 		this.mask = mask;
 	}
+	public GetMask()
+	{
+		return mask;
+	}
+	public GetAddress()
+	{
+		return address;
+	}
 }
