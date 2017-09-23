@@ -8,7 +8,7 @@ public class Application {
 
 	public Application(Socket localSocket, Socket remoteSocket) {
 		this.setLocalSocket(localSocket);
-		this.remoteSocket = remoteSocket;
+		this.setRemoteSocket(remoteSocket);
 	}
 	
 	public Socket getLocalSocket() {
@@ -17,5 +17,13 @@ public class Application {
 
 	public void setLocalSocket(Socket localSocket) {
 		this.localSocket = localSocket;
+	}
+
+	public Socket getRemoteSocket() {
+		return remoteSocket;
+	}
+
+	public void setRemoteSocket(Socket remoteSocket) {
+		this.remoteSocket = remoteSocket;
 	}
 }
