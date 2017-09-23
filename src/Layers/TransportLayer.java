@@ -1,6 +1,7 @@
 package Layers;
 
 import Enums.LayerType;
+import Common.PacketData;
 
 import java.util.ArrayList;
 
@@ -19,5 +20,13 @@ public class TransportLayer extends Layer {
 	}
 	public void setPortsInUse(ArrayList<Integer> portsInUse) {
 		this.portsInUse = portsInUse;
+	}
+
+	public static PacketData encapsulate(PacketData packetData) {
+		return packetData != null ? new PacketData(packetData) : null;
+	}
+	
+	public static PacketData decapsulate(PacketData packetData) {
+		return packetData != null ? new PacketData(packetData) : null;
 	}
 }
