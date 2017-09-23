@@ -12,6 +12,12 @@ public class TransportLayer extends Layer {
 	}
 	public TransportLayer() {
 		super(LayerType.L4);
-		portsInUse = new ArrayList<>();
+		setPortsInUse(new ArrayList<>());
+	}
+	public ArrayList<Integer> getPortsInUse() {
+		return portsInUse;
+	}
+	public void setPortsInUse(ArrayList<Integer> portsInUse) {
+		this.portsInUse = portsInUse;
 	}
 }
