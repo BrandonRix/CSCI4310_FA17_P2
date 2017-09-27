@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class TransportLayer extends Layer {
 	private ArrayList<Integer> portsInUse;
-
+	
 	public boolean portIsTaken(int port) {
 		for(int i = 0; i < portsInUse.size(); i++)
 		{
@@ -22,7 +22,9 @@ public class TransportLayer extends Layer {
 		super(LayerType.L4);
 		setPortsInUse(new ArrayList<>());
 	}
-
+	/**
+	* Gets and returns the ports that are in use.
+	*/
 	public ArrayList<Integer> getPortsInUse() {
 		return portsInUse;
 	}
